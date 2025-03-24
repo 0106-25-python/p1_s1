@@ -21,7 +21,7 @@
 ```
 
 ### Что нам пригодится из возможностей Python
-1) Функция [open()](https://www.w3schools.com/python/python_file_open.asp)
+1) Функция [open()](https://docs.python.org/3/library/functions.html#open)
 
 ```python
 file_object = open("db.txt", "r", encoding="utf8") #открываем файл на чтение; инициализируем переменную, которая содержит объект файл; дополнительно указываем кодировку
@@ -29,7 +29,7 @@ file_content = file_object.read() #инициализируем переменн
 file_object.close() #всегда хорошая практика закрывать файл после действий с его контентом, если не планируете больше что-то с ним делать
 ```
 
-2) Функция [splitlines()](https://www.w3schools.com/python/ref_string_splitlines.asp)
+2) Функция [splitlines()](https://docs.python.org/3/library/stdtypes.html#str.splitlines)
 
 ```python
 string_to_list = """Это первая строка.
@@ -37,7 +37,7 @@ string_to_list = """Это первая строка.
 splitted_string = string_to_list.splitlines() #вызов функции возвращает список, состоящий из 2-х строк
 ```
 
-3) Использование циклов с помощью конструкции [for](https://www.w3schools.com/python/python_for_loops.asp)
+3) Использование циклов с помощью конструкции [for](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
 ```python
 string_to_list = """Это первая строка.
 Это вторая строка."""
@@ -46,7 +46,7 @@ for specific_line in splitted_string: #запускаем цикл с переб
   print(specific_line) #выводим конкретный элемент из списка
 ```
 
-4) Вывод информации в консоль с помощью функции [print()](https://www.w3schools.com/python/ref_func_print.asp)
+4) Вывод информации в консоль с помощью функции [print()](https://docs.python.org/3/library/functions.html#print)
 ```python
 print("Простой вывод строки")
 ```
@@ -61,7 +61,7 @@ print("Простой вывод строки")
 Все функции вызываются последовательно и используют результаты выполнения предыдущей.
 
 ### Что нам пригодится из Python
-1) Определение [функций](https://www.w3schools.com/python/python_functions.asp)
+1) Определение [функций](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
 ```python
 def simple_function():
   print("Простейшая функция без параметров, которая ничего не возвращает")
@@ -86,13 +86,13 @@ print(function_result)
 - проверяем статус и выводим соответствующий символ
 
 ### Что нам пригодится из Python
-1) Функция [split()](https://www.w3schools.com/python/ref_string_split.asp)
+1) Функция [split()](https://docs.python.org/3/library/stdtypes.html#str.split)
 ```python
 string_to_list_sep = "Первый элемент*Второй элемент*Третий элемент"
 splitted_string_sep = string_to_list_sep.split("*") #разбиваем строку на набор подстрок по конкретному разделителю
 ```
 
-2) Логический оператор [if/else](https://www.w3schools.com/python/python_conditions.asp)
+2) Логический оператор [if/else](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
 ```python
 a = 3
 if a < 5:
@@ -100,7 +100,7 @@ if a < 5:
 else:
   print("а явно больше 5")
 ```
-3) Функция добавления элементов в список [append()](https://www.w3schools.com/python/ref_list_append.asp)
+3) Функция добавления элементов в список [append()](https://docs.python.org/3/library/array.html#array.array.append)
 ```python
 test_list = [] #инициализация пустого списка
 test_list.append("Первое значение") #добавляем значение в конец списка
